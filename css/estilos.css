@@ -1,0 +1,431 @@
+body{    
+    background-color: #eee;
+    overflow-x: hidden;
+    
+}
+i{
+  font-size: 1.9rem;
+}
+
+.centrado{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display:block;
+}
+
+.redes{
+  background-color:rgba(255, 0, 0, 0.555);
+  color:white;
+  width: 35px;
+  height: 105px;
+  font-weight: bold;
+  padding:4px;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: auto;
+  margin-top: 190px;
+}
+
+.hi-slide { 
+    position: relative; 
+    width: 754px; 
+    height: 292px; 
+    margin: 25px auto 0; 
+    
+}
+
+@media (max-width: 1075px){
+.hi-slide { 
+  display: none  
+  }
+}
+
+            
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            { position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;     
+              border-radius: 50px; 
+              line-height: 40px;
+              text-align: center; 
+              cursor: pointer;
+              background-color: rgb(255, 255, 255); 
+              color: black;               
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+
+    .hi-slide .hi-next:hover, 
+    .hi-slide .hi-prev:hover 
+        {
+        opacity: 1; 
+        background-color: #fff;  
+        }
+            
+    .hi-slide .hi-prev { 
+        left: -60px; 
+    }
+            
+    .hi-slide .hi-prev::before { content: '<'; }
+    .hi-slide .hi-next { right: -60px; }
+    .hi-slide .hi-next::before { content: '>'; }
+    
+    .hi-slide > ul
+    { 
+        list-style: none; 
+        position: relative;
+        width: 254px; 
+        height: 792px; 
+        margin: 0;
+        padding: 0;
+    }
+            
+            
+      .hi-slide > ul > li {
+        overflow: hidden; 
+        position: absolute; 
+        z-index: 0; 
+        left: 377px;
+        top: 146px; 
+        width: 600px; 
+        height: 310px; 
+        margin: 0; 
+        padding: 0;
+        border: 1px solid #fff;              
+        background-color: rgb(203, 184, 255); 
+        cursor: pointer; 
+    }
+            
+  .hi-slide > ul > li > div { 
+        width: 100%; 
+        height: 100%; 
+        background-position: center;
+        background-image: inherit;
+        
+   
+    }
+
+.img-slide{ 
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+
+/*
+ * Sidebar
+ */
+
+ .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+  
+  /*
+   * Content
+   */
+  
+  [role="main"] {
+    padding-top: 133px; /* Space for fixed navbar */
+  }
+  
+  @media (min-width: 768px) {
+    [role="main"] {
+      padding-top: 48px; /* Space for fixed navbar */
+    }
+  }
+
+  .card{
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(24, 13, 49, 0.795) 
+  }
+
+  @media (min-width: 576px){
+  .mr-auto, .mx-auto {
+    margin-right: 4%!important;
+}
+  }
+
+  @media (min-width: 1100px){
+    .mr-auto, .mx-auto {
+      margin-right: 10%!important;
+  }
+    }
+
+  @media (min-width: 1300px){
+    .mr-auto, .mx-auto {
+      margin-right: 18%!important;
+  }
+    }
+
+@media (min-width: 576px){
+.mr-sm-2, .mx-sm-2 {
+    margin-right: 4%!important;
+  }
+}
+
+@media (min-width: 1100px){
+  .mr-sm-2, .mx-sm-2 {
+      margin-right: 10%!important;
+    }
+  }
+
+@media (min-width: 1300px){
+  .mr-sm-2, .mx-sm-2 {
+      margin-right: 18%!important;
+    }
+  }
+
+.titulo-slide{
+  padding-right:0!important;
+}
+
+.tw-avatar--size-50 {
+    margin-top:5px; 
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.tw-avatar--size-100 {
+  margin-top:5px; 
+  height: 5rem;
+  width: 5rem;
+}
+.tw-avatar__img {
+  width: 100%;
+}
+
+.tw-border-radius-rounded, .tw-root--theme-dark .tw-border-radius-rounded, .tw-root--theme-light .tw-border-radius-rounded {
+  border-radius: 50%!important;
+}
+.tw-block {
+  display: block!important;
+}
+
+/*img {
+  max-width: 100%;
+  vertical-align: top;
+}*/
+
+.caja-config-1{
+  width: 80%;
+  height: auto;
+  padding: 0px;
+  background-color: rgba(51, 51, 51, 0.596);
+  border-radius: 5px;
+  margin: 20px;
+}
+.caja-config-2{
+  border: #000 solid 1px;
+  padding: 20px;
+  border-radius: 5px;
+}
+/*
+.Ficha>div {
+  position: relative;
+  z-index: 2;
+}
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+@media (min-width: 767px){
+.fchlt {
+  text-align: left;
+}
+}
+
+.fchlt {
+  padding-top: 0;
+  text-align: center;
+}
+
+.Ficha>.Bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
+  content: '';
+}
+
+.AnimeCover {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px){
+  .AnimeCover {
+    margin-top: -190px;
+    position: relative;
+    z-index: 10;
+  }
+}
+.AnimeCover .Image {
+  position: relative;
+  max-width: 260px;
+  margin: 0 auto 15px;
+}
+
+
+@media (min-width: 767px){
+.fchlt .Container {
+    padding-right: 180px;
+}
+}
+@media (min-width: 1200px){.Ficha>.Container {
+  padding-top: 180px;
+  padding-left: 310px;
+}
+}
+
+@media (min-width: 1020px){.Ficha>.Container {
+  padding-top: 80px;
+}
+}
+
+.Ficha>div {
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 1200px){.Container {
+  max-width: 1170px;
+}
+}
+
+@media (min-width: 1020px){.Container {
+  max-width: 990px;
+}
+}
+
+@media (min-width: 767px){.Container {
+  max-width: 765px;
+}
+}
+
+.Container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+*/
+
+.banner {
+  position: relative;
+  padding: 20px 0;
+  margin: -20px 0 20px;
+  height: 300px;
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+  box-shadow: inset 0 0 100px #000;
+}
+
+.imagen-cover {
+  max-width: 270px;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  left: 15px;
+}
+
+.imagen-cover .imagen {
+  position: relative;
+  max-width: 240px;
+  max-height: 240px;
+  margin: 0 auto 15px;
+}
+
+@media (min-width: 1200px){
+  .imagen-cover {
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.descripcion{
+  width: 73%;
+  background-color: rgb(247, 247, 247);
+  border: rgb(235, 225, 225) solid 1px;
+  border-radius: 5px;
+  margin-left: auto;
+  right: 15px;
+  margin-top:-130px;
+}
+
+figure > img{
+  width: 100%;
+  height: 100%;
+}
