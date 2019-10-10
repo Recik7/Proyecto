@@ -11,48 +11,9 @@
     <!--<link rel="stylesheet" href="css/jquery.hislide.min.css" />-->
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg" style="background-color: #2b0548!important">
-  <a class="navbar-brand" href="#">
-    <img src="img/Monlai-white.png" width="30" height="30" alt="">
-  </a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Descubrir <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Explorar <span class="sr-only">(current)</span></a>
-    </li>
-  </ul>
-  <form class="form-inline my-2 my-lg-0" style="width: 1000px;">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" style="width: 426px">
-    <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modal-sesion" type="button" style="margin-right: 5px" >Iniciar sesion</button>
-    <button class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registrarse</button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="#">Cliente</a>
-      <a class="dropdown-item" href="#">Compañia</a>
-    </div>
-  </form>
-</div>
-</nav>
-
-<div class="conteiner">
-  <div class="row">
-    <nav class="col-3 col-md-3 col-lg-2 d-none d-md-block bg-dark sidebar">
-      <div class="sidebar-sticky">
-        <div class="card text-center" style="width: 90%; margin: 10px; border: 0%;">
-          <div class="card-body width:100%">
-            <h5 style="color: white" class="card-title">Registrate en Monlai</h5>
-            <p style="color: white; font-size: .8rem" class="card-text">Descubre las mejores promociones de tus tiendas favoritas</p>
-            <a href="#" class="btn btn-primary" style="color: white">Registro</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+<?php
+    require_once('navbar.html')
+?>
           
     <main role="main" class="col-12 col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">    

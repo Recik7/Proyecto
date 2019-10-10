@@ -10,20 +10,20 @@
         		// 控制轮播的动画时间
             speed: 1000,
             // 控制 interval 的时间 (轮播速度)
-            interval: 20000,
+            interval: 2000000,
             
         };
         // 对象合并
         $.extend(true, setting, options);
         // 规定好每张图片处于的位置和状态
         var states = [
-            { $zIndex: 1, width: 370, height: 150, top: 50, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 380, height: 245, top: 20, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 520, height: 268, top: 10, left: 35, $opacity: 0.7 },
-            { $zIndex: 4, width: 600, height: 288, top: 0, left: 75, $opacity: 1 },
-            { $zIndex: 3, width: 520, height: 268, top: 10, left: 200, $opacity: 0.7 },
-            { $zIndex: 2, width: 380, height: 245, top: 20, left: 375, $opacity: 0.4 },
-            { $zIndex: 1, width: 370, height: 150, top: 50, left: 300, $opacity: 0.2 }
+            { $zIndex: 1, width: 570, height: 150, top: 50, left: 134, $opacity: 0.2 },
+            { $zIndex: 2, width: 580, height: 245, top: 20, left: 0, $opacity: 0.4 },
+            { $zIndex: 3, width: 720, height: 268, top: 10, left: 35, $opacity: 0.7 },
+            { $zIndex: 4, width: 800, height: 288, top: 0, left: 75, $opacity: 1 },
+            { $zIndex: 3, width: 720, height: 268, top: 10, left: 200, $opacity: 0.7 },
+            { $zIndex: 2, width: 580, height: 245, top: 20, left: 375, $opacity: 0.4 },
+            { $zIndex: 1, width: 570, height: 150, top: 50, left: 300, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');

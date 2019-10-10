@@ -6,6 +6,23 @@ body{
 i{
   font-size: 1.9rem;
 }
+modal{
+  background-color: #eee;
+}
+.nav-tabs{
+  margin-top: 10px !important;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+input[type="file"]{
+  display: none;
+}
 
 .centrado{
   margin-left: auto;
@@ -13,6 +30,15 @@ i{
   margin-top: 20px;
   margin-bottom: 20px;
   display:block;
+}
+
+.nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  border-color: #adb0b3 #adb0b3 #eee;
+}
+
+.nav-link.active{
+  background-color: #eee !important;
 }
 
 .redes{
@@ -28,9 +54,16 @@ i{
   margin-top: 190px;
 }
 
+.titulo-slide{
+  color: darkred;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
 .hi-slide { 
     position: relative; 
-    width: 754px; 
+    width: 954px; 
     height: 292px; 
     margin: 25px auto 0; 
     
@@ -232,8 +265,8 @@ i{
 
 .tw-avatar--size-50 {
     margin-top:5px; 
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .tw-avatar--size-100 {
